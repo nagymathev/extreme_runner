@@ -1,5 +1,3 @@
-from cgi import test
-from turtle import width
 import pygame
 from sys import exit
 
