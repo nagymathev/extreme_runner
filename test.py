@@ -47,10 +47,10 @@ snail_speed = 4
 snail_rect = snail_surface.get_rect(midbottom = (600, 300))
 
 # Health bar
-health = 100
-bar_dimensions = (health * 4, 1)
-bar_surface = pygame.Surface(bar_dimensions)
-bar_surface.fill("red")
+# health = 100
+# bar_dimensions = (health * 4, 1)
+# bar_surface = pygame.Surface(bar_dimensions)
+# bar_surface.fill("red")
 
 # Player
 player_dimensions = (50, 150)
@@ -96,9 +96,9 @@ while True:
 
     if game_active:
 
-        bar_dimensions = (health * 4, 10)
-        bar_surface = pygame.Surface(bar_dimensions)
-        bar_surface.fill("red")
+        # bar_dimensions = (health * 4, 10)
+        # bar_surface = pygame.Surface(bar_dimensions)
+        # bar_surface.fill("red")
 
         screen.blit(sky_surface, (0, 0))
         screen.blit(test_surface ,((screen_dimensions[0] / 2) - (test_surface_dimensions[0] / 2), 300))
@@ -135,7 +135,7 @@ while True:
         if player_rect.bottom >= 300:
             player_rect.bottom = 300
         screen.blit(player_surface, player_rect)
-        screen.blit(bar_surface, (20, 20))
+        # screen.blit(bar_surface, (20, 20))
 
         # Collision
         if snail_rect.colliderect(player_rect):
